@@ -13,12 +13,12 @@ class Vector {
   ~Vector() { delete[] elem; }
 
   // try to remove the const and recompile
-  std::size_t size() const { return _size; }
+  auto size() const { return _size; }
 
-  num& operator[](const std::size_t i) { return elem[i]; }
+  auto& operator[](const std::size_t i) { return elem[i]; }
 
   // try to comment this line and recompile
-  const num& operator[](const std::size_t i) const { return elem[i]; }
+  const auto& operator[](const std::size_t i) const { return elem[i]; }
 };
 
 template <typename T>

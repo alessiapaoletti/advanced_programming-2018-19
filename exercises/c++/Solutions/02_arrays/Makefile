@@ -1,8 +1,6 @@
 SRC = reverseorder.cc \
       primenumbers.cc \
 			sieveofErat.cc \
-			reverseorderVect.cc \
-			sieveofEratVect.cc
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -g -std=c++11
